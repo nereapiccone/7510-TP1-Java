@@ -15,19 +15,8 @@ public class Rules {
 		return rulesList;
 	}
 
-	public void setRules(List<String> rules) {
-		this.rulesList = rules;
-	}
-
 	public void addRule(String rule) {
 		this.rulesList.add(rule);
-	}
-
-	// Check if the query is a rule
-	public boolean isARule(String query) {
-		if (query.contains(":-"))
-			return true;
-		return false;
 	}
 
 	// Search name of rule to continue with facts
@@ -45,10 +34,10 @@ public class Rules {
 	}
 	
 	public String removeParenthesis(String query) {
-		if (query.indexOf("(") != -1) {
-			return query.substring(0, query.indexOf("("));
-		}
-		return null;
+		String string = null; 
+		if (query.indexOf("(") != -1) 
+			string = query.substring(0, query.indexOf("("));
+		return string;
 	}
 
 }

@@ -13,11 +13,7 @@ public class Facts {
     public List<String> getFacts() {
         return factsLists;
     }
-    
-    public void setFactsList(List<String> facts) {
-        this.factsLists = facts;
-    }
-    
+     
     public void addFact(String fact) {
         this.factsLists.add(fact);
     }
@@ -33,8 +29,9 @@ public class Facts {
     
 	// Check if is a fact
 	public boolean isAFact(String query) {
+		boolean isAFact = false;
 		if (!query.contains(":-"))
-			return true;
-		return false;
+			isAFact = true;
+		return isAFact;
 	}
 }
