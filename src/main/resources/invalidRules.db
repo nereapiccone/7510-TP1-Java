@@ -1,0 +1,9 @@
+varonjuan).
+varon(.
+varon().
+varon.
+padre(, pepa).
+hijo(X, Y) - varon(X), padre(Y, X).
+hija Y) :- mujer(X), padre(Y, X).
+tio(X, Y, Z):- varon(X),	hermano(X, Z),padre(Z, Y).
+tia(X, Y, Z):- mujer(X),	hermano(X, Z).
